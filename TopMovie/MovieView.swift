@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewMovie: UIView {
+class MovieView: UIView {
     
     var collectionView: UICollectionView = {
         let layot = UICollectionViewFlowLayout()

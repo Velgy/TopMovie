@@ -19,6 +19,7 @@ class Service {
             URLSession.shared.dataTask(with: url) { data, responce, error in
                 if let data = data {
                     do {
+                        self.decoder.keyDecodingStrategy = .convertFromSnakeCase
                         let object = try self.decoder.decode(Response.self, from: data)
                         DispatchQueue.main.async {
                             completion(object)

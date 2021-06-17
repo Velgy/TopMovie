@@ -14,7 +14,7 @@ class InfoView: UIView {
     let titleOverview: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
-        label.numberOfLines = 12
+        label.numberOfLines = 0
         label.textColor = .black
         label.textAlignment = .center
         return label

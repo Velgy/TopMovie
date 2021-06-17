@@ -12,12 +12,12 @@ class MovieViewController: UIViewController {
     var response: Response?
     var service = Service()
     
-    private var mainView: ViewMovie {
-        return view as! ViewMovie
+    private var mainView: MovieView {
+        return view as! MovieView
     }
     
     override func loadView() {
-        view = ViewMovie()
+        view = MovieView()
     }
 
     override func viewDidLoad() {
